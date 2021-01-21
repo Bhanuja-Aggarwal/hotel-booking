@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["cname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+<style type="text/css">
+	table{
+		background-color: black;
+		color: white;
+	}
+	body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  
+  background-image:6.jpg;
+  height: 890px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1{
+	color: black;
+	font-size:70px ;
+	font-weight: bold;
+}
+</style>
+</head>
+<body class="hero-image"  >
+	<h1><center><b>&nbsp&nbsp&nbspEVENT REGISTRATION</b></center></h1>
+		<form name="myForm" action="last.html" onsubmit="return validateForm()" method="post" >
+	<center>
+	<fieldset style="width: 46%;background-color: black;">
+ <table cellspacing="5" cellpadding="5">
+ <tr>
+ <td>
+  First Name:</td><td> <input type="text" name="cname"></td></tr>
+ <tr>
+ <td>
+  Last Name:</td><td> <input type="text" name="lname"></td></tr>
+   <tr>
+ <td>
+  E-mail:</td><td> <input type="email" name="email"></td></tr>
+   <tr>
+ <td>
+ Mobile No:</td><td> <input type="text" name="fname"></td>
+ &nbsp &nbsp &nbsp<td><button style="background-color: #276A0A"><b><font color="white">Send Passcode</font></b></button></td></tr><br>
+ <tr><td><button style="background-color: #276A0A"><b><font color="white">verify and continue</font></b></button></td></tr><br>
+
+</table>
+
+</fieldset>
+<table style="padding-top: 2%"></table>
+<fieldset style=" width:90px; background-color: black;">
+	<table cellpadding="4" cellspacing="5">
+		<tr>
+			<td>
+				Aadharcard No:</td><td><input type="text" name="acn"></td></tr>
+				<tr>
+					<td>Address:</td><td><textarea cols="40" rows="6"></textarea></td></tr>
+				<td>State:</td><td><input type="text" name="st"></td>				
+				<td>City:</td><td><input type="text" name="st"></td>
+					</tr>
+
+	</table>
+	<br>
+	<br>
+</fieldset>
+<table style="padding-top: 2%"></table>
+<fieldset style="width: 4% ;background-color: black;">
+	
+<table style="padding-top: 2%"></table>
+  <input type="submit" value="Submit" style="background-color: black;width:12% ;height:60%;color: white;padding-top: 10px;padding-bottom: 10px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="reset" style="background-color: black;width:9% ;height:60%;color: white;padding-top: 10px;padding-bottom: 10px">
+</center>
+</form>
+
+</body>
+</html>
